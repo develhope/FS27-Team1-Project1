@@ -47,3 +47,6 @@ const team1 = [{
     petName: ""
 }
 ]
+
+
+//    - Print the team in age order (name age).
