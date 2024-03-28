@@ -48,5 +48,8 @@ const team1 = [{
 }
 ]
 
-
 //    - Print the team in age order (name age).
+
+team1.sort((a, b) => a.name - b.name);
+
+console.log(team1);
