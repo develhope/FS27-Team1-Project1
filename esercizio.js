@@ -1,3 +1,4 @@
+// stampa l'età media del team
 const team1 = [{
     name: "Domenico",
     surname: "Provenzano",
@@ -33,11 +34,11 @@ const team1 = [{
     favoriteFilm: "Mrs Doubtfire",
     favoriteBook: "The Stone Monkey",
     petName: "Guy",
- },
- {
+},
+{
     name: "zain",
     surname: "ahmed",
-    age: 27,    
+    age: 27,
     city: "Bologna",
     hobby: "Games",
     favoriteFood: "Pizza",
