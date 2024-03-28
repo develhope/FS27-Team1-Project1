@@ -1,4 +1,5 @@
-const team1 = [{
+const team1 = [
+  {
     name: "Domenico",
     surname: "Provenzano",
     age: 33,
@@ -22,4 +23,16 @@ const team1 = [{
     favoriteBook: "The Stone Monkey",
     petName: "Guy",
  },
+ {
+    name: "zain",
+    surname: "ahmed",
+    age: 27,    
+    city: "Bologna",
+    hobby: "Games",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "LoL",
+    favoriteFilm: "",
+    favoriteBook: "",
+    petName: ""
+}
 ]
