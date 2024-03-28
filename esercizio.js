@@ -1,3 +1,10 @@
+// stampa l'età media del team
+function averageAge(team1) {
+    const sum = team1.reduce((a, team) => a + team.age, 0)
+    return sum / team1.length
+}
+
+
 const team1 = [{
     name: "Domenico",
     surname: "Provenzano",
@@ -33,11 +40,11 @@ const team1 = [{
     favoriteFilm: "Mrs Doubtfire",
     favoriteBook: "The Stone Monkey",
     petName: "Guy",
- },
- {
+},
+{
     name: "zain",
     surname: "ahmed",
-    age: 27,    
+    age: 27,
     city: "Bologna",
     hobby: "Games",
     favoriteFood: "Pizza",
@@ -47,3 +54,5 @@ const team1 = [{
     petName: ""
 }
 ]
+const average = averageAge(team1)
+console.log(average)
