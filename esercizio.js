@@ -1,4 +1,4 @@
-const newArr = [{
+const team1 = [{
     name: "zain",
     surname: "ahmed",
     age: 27,    
