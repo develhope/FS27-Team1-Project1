@@ -1,5 +1,4 @@
-const team1 = [
-  {
+const team1 = [{
     name: "Domenico",
     surname: "Provenzano",
     age: 33,
@@ -10,6 +9,18 @@ const team1 = [
     favoriteFilm: "Il buono, il brutto e il cattivo",
     favoriteBook: "Il mastino dei Baskerville",
     petName: "Stella"
+},
+{
+    name: "Mirko",
+    surname: "Vitale",
+    age: 26,
+    city: "Roma",
+    hobby: "Music",
+    favoriteFood: "Carbonara",
+    favoriteVideoGame: "Call of Duty",
+    favoriteFilm: "Django",
+    favoriteBook: "Metro 2033",
+    petName: "Melody"
 },
 {
     name: "Andrea",
