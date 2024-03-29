@@ -80,3 +80,11 @@ console.log(alphabeticSurname)
 
 const average = averageAge(team1)
 console.log(average)
+
+//stampa il nome di chi ha come videogames preferito LoL o League of Legends
+for(let i = 0; i < team1.length; i++)
+if( team1[i].favoriteVideoGame === "LoL" || team1[i].favoriteVideoGame === "League of Legends"){
+    console.log(team1[i].name)
+}
+
+
