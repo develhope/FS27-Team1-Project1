@@ -1,5 +1,10 @@
-const team1 = [
-  {
+// stampa l'età media del team
+function averageAge(team1) {
+    const sum = team1.reduce((a, team) => a + team.age, 0)
+    return sum / team1.length
+}
+
+const team1 = [{
     name: "Domenico",
     surname: "Provenzano",
     age: 33,
@@ -49,6 +54,8 @@ const team1 = [
   },
 ];
 
+// Ordinamento alfabetico
+
 alphabeticSurname = [...team1];
 
 alphabeticSurname.sort((name1, name2) => {
@@ -66,3 +73,6 @@ alphabeticSurname.sort((name1, name2) => {
 });
 
 console.log(alphabeticSurname)
+
+const average = averageAge(team1)
+console.log(average)
