@@ -50,6 +50,6 @@ const team1 = [{
 
 //    - Print the team in age order (name age).
 
-team1.sort((a, b) => a.name.localeCompare(b.name));
+team1.sort((a, b) => a.age-b.age);
 
 console.log(team1);
