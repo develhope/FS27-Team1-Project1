@@ -80,7 +80,7 @@ function alphabeticSurname(team1) {
 
 alphabeticSurname(team1)
 
-// console.log(alphabeticSurname);
+// - Print if there are same names
 
 const average = averageAge(team1);
 console.log(average);
