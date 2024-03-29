@@ -61,21 +61,24 @@ team1.sort((a, b) => a.age - b.age);
 console.log(team1);
 
 // Ordinamento alfabetico
-alphabeticSurname = [...team1];
+function alphabeticSurname(team1) {
+  team1.sort((name1, name2) => {
+    let firstSurname = name1.surname.toUpperCase();
+    let secondSurname = name2.surname.toUpperCase();
 
-alphabeticSurname.sort((name1, name2) => {
-  let firstSurname = name1.surname.toUpperCase();
-  let secondSurname = name2.surname.toUpperCase();
+    if (firstSurname < secondSurname) {
+      return -1;
+    }
+    if (firstSurname > secondSurname) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  team1.forEach((person) => console.log(`${person.surname} ${person.name}`));
+}
 
-  if (firstSurname < secondSurname) {
-    return -1;
-  }
-  if (firstSurname > secondSurname) {
-    return 1;
-  } else {
-    return 0;
-  }
-});
+alphabeticSurname(team1)
 
 // console.log(alphabeticSurname);
 
