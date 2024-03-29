@@ -50,12 +50,16 @@ const team1 = [{
     favoriteVideoGame: "LoL",
     favoriteFilm: "",
     favoriteBook: "",
-    petName: "",
-  },
-];
+    petName: ""
+}
+]
+
+//    - Print the team in age order (name age).
+team1.sort((a, b) => a.age-b.age);
+
+console.log(team1);
 
 // Ordinamento alfabetico
-
 alphabeticSurname = [...team1];
 
 alphabeticSurname.sort((name1, name2) => {
