@@ -1,10 +1,11 @@
 // stampa l'età media del team
 function averageAge(team1) {
-    const sum = team1.reduce((a, team) => a + team.age, 0)
-    return sum / team1.length
+  const sum = team1.reduce((a, team) => a + team.age, 0);
+  return sum / team1.length;
 }
 
-const team1 = [{
+const team1 = [
+  {
     name: "Domenico",
     surname: "Provenzano",
     age: 33,
@@ -50,12 +51,12 @@ const team1 = [{
     favoriteVideoGame: "LoL",
     favoriteFilm: "",
     favoriteBook: "",
-    petName: ""
-}
-]
+    petName: "",
+  },
+];
 
-//    - Print the team in age order (name age).
-team1.sort((a, b) => a.age-b.age);
+//  - Print the team in age order (name age).
+team1.sort((a, b) => a.age - b.age);
 
 console.log(team1);
 
@@ -76,7 +77,16 @@ alphabeticSurname.sort((name1, name2) => {
   }
 });
 
-console.log(alphabeticSurname)
+// console.log(alphabeticSurname);
 
-const average = averageAge(team1)
-console.log(average)
+const average = averageAge(team1);
+console.log(average);
+
+for (let i = 0; i < team1.length; i++) {
+  for (let n = i++; n < team1.length; n++)
+    if (team1[i].name === team1[n].name && i != n) {
+      console.log(team1[i].name);
+    } else {
+      console.log("No same name detected");
+    }
+}
