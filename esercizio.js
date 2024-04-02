@@ -15,8 +15,8 @@ const team1 = [{
     favoriteFilm: "Il buono, il brutto e il cattivo",
     favoriteBook: "Il mastino dei Baskerville",
     petName: "Stella",
-  },
-  {
+},
+{
     name: "Mirko",
     surname: "Vitale",
     age: 26,
@@ -27,8 +27,8 @@ const team1 = [{
     favoriteFilm: "Django",
     favoriteBook: "Metro 2033",
     petName: "Melody",
-  },
-  {
+},
+{
     name: "Andrea",
     surname: "Schiariti",
     age: 33,
@@ -39,8 +39,8 @@ const team1 = [{
     favoriteFilm: "Mrs Doubtfire",
     favoriteBook: "The Stone Monkey",
     petName: "Guy",
-  },
-  {
+},
+{
     name: "zain",
     surname: "ahmed",
     age: 27,
@@ -55,7 +55,7 @@ const team1 = [{
 ]
 
 //    - Print the team in age order (name age).
-team1.sort((a, b) => a.age-b.age);
+team1.sort((a, b) => a.age - b.age);
 
 console.log(team1);
 
@@ -63,20 +63,28 @@ console.log(team1);
 alphabeticSurname = [...team1];
 
 alphabeticSurname.sort((name1, name2) => {
-  let firstSurname = name1.surname.toUpperCase();
-  let secondSurname = name2.surname.toUpperCase();
+    let firstSurname = name1.surname.toUpperCase();
+    let secondSurname = name2.surname.toUpperCase();
 
-  if (firstSurname < secondSurname) {
-    return -1;
-  }
-  if (firstSurname > secondSurname) {
-    return 1;
-  } else {
-    return 0;
-  }
+    if (firstSurname < secondSurname) {
+        return -1;
+    }
+    if (firstSurname > secondSurname) {
+        return 1;
+    } else {
+        return 0;
+    }
 });
 
 console.log(alphabeticSurname)
 
 const average = averageAge(team1)
 console.log(average)
+
+//stampa il nome di chi ha come videogames preferito LoL o League of Legends
+for (let i = 0; i < team1.length; i++)
+    if (team1[i].favoriteVideoGame === "LoL" || team1[i].favoriteVideoGame === "League of Legends") {
+        console.log(team1[i].name)
+    }
+
+
