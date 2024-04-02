@@ -44,9 +44,9 @@ const team1 = [{
     favoriteVideoGame: "LoL",
     favoriteFilm: "",
     favoriteBook: "",
-    petName: ""
-}
-]
+    petName: "",
+  },
+];
 
 // Print the team in age order (name age).
 function ageOrder(team1) {
@@ -76,6 +76,21 @@ function alphabeticSurname(team1) {
 
 alphabeticSurname(team1)
 
+// - Print if there are same names
+
+const average = averageAge(team1);
+console.log(average);
+
+for (let i = 0; i < team1.length; i++) {
+  for (let n = i++; n < team1.length; n++)
+    if (team1[i].name === team1[n].name && i != n) {
+      console.log(team1[i].name);
+    } else {
+      console.log("No same name detected");
+}
+
+alphabeticSurname(team1)
+
 const average = averageAge(team1)
 console.log(average)
 
@@ -90,3 +105,5 @@ function averageAge(team1) {
     const sum = team1.reduce((a, team) => a + team.age, 0)
     return sum / team1.length
 }
+  
+console.log(averageAge(team1));
