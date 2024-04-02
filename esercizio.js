@@ -54,29 +54,33 @@ const team1 = [{
 }
 ]
 
-//    - Print the team in age order (name age).
-team1.sort((a, b) => a.age-b.age);
+// Print the team in age order (name age).
+function ageOrder(team1) {
+  team1.sort((a, b) => a.age-b.age);
+  team1.forEach((person) => console.log(`${person.name} ${person.age}`));
+}
 
-console.log(team1);
+ageOrder(team1);
 
 // Ordinamento alfabetico
-alphabeticSurname = [...team1];
+function alphabeticSurname(team1) {
+  team1.sort((name1, name2) => {
+    let firstSurname = name1.surname.toUpperCase();
+    let secondSurname = name2.surname.toUpperCase();
 
-alphabeticSurname.sort((name1, name2) => {
-  let firstSurname = name1.surname.toUpperCase();
-  let secondSurname = name2.surname.toUpperCase();
+    if (firstSurname < secondSurname) {
+      return -1;
+    }
+    if (firstSurname > secondSurname) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  team1.forEach((person) => console.log(`${person.surname} ${person.name}`));
+}
 
-  if (firstSurname < secondSurname) {
-    return -1;
-  }
-  if (firstSurname > secondSurname) {
-    return 1;
-  } else {
-    return 0;
-  }
-});
-
-console.log(alphabeticSurname)
+alphabeticSurname(team1)
 
 const average = averageAge(team1)
 console.log(average)
