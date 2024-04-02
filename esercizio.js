@@ -1,9 +1,3 @@
-// stampa l'età media del team
-function averageAge(team1) {
-    const sum = team1.reduce((a, team) => a + team.age, 0)
-    return sum / team1.length
-}
-
 const team1 = [{
     name: "Domenico",
     surname: "Provenzano",
@@ -89,4 +83,10 @@ console.log(average)
 for (let i = 0; i < team1.length; i++)
     if (team1[i].favoriteVideoGame === "LoL" || team1[i].favoriteVideoGame === "League of Legends") {
         console.log(team1[i].name)
+}
+
+// stampa l'età media del team
+function averageAge(team1) {
+    const sum = team1.reduce((a, team) => a + team.age, 0)
+    return sum / team1.length
 }
