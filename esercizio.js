@@ -105,3 +105,10 @@ function averageAge(team1) {
 }
 
 console.log(averageAge(team1))
+
+//Print who has a pet (name, petname)
+for(let i = 0; i < team1.length; i++){
+    if(team1[i].petName != ""){
+        console.log(team1[i].name, team1[i].petName)
+    }
+}
