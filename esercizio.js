@@ -112,3 +112,7 @@ for(let i = 0; i < team1.length; i++){
         console.log(team1[i].name, team1[i].petName)
     }
 }
+
+function hobbies (team1) {
+    team1.forEach(person => {console.log(`${person.name}'s hobby is ${person.hobby}`)})
+}
