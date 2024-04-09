@@ -139,4 +139,10 @@ function correctingTitle(team1) {
   }
   
 correctingTitle(team1)
+
+//Print all the cities
+function cities(team1) {
+    team1.forEach(person => { console.log(`${person.name} lives in ${person.city}`) })
+}
+cities(team1)
   
