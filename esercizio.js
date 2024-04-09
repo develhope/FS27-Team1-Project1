@@ -113,6 +113,7 @@ for(let i = 0; i < team1.length; i++){
     }
 }
 
+//Print all the hobbies
 function hobbies (team1) {
     team1.forEach(person => {console.log(`${person.name}'s hobby is ${person.hobby}`)})
 }
